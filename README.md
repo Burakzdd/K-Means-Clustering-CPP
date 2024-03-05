@@ -18,29 +18,29 @@ This project is designed to cluster a specific dataset into a specified number o
 ## Functions and Operator
 
 - **visualizeClusters Function:** This function visualizes clusters and points using the matplotlib library. For example, the visualization output is shown in Figure 1 below.
-
+![Figure 2](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig1.jpg)
 - **saveClusters Function:** This function saves the coordinates of clusters to a text file.
 
 - **savePoints Function:** This function saves the coordinates of points and the clusters they belong to a text file.
 
 - **operator+ (KMeansCluster):** This operator adds the points of the object at the end of the points of the passed object and updates the clusters. For instance, when there are 5 points as shown in Figure 2, this operator adds them to the points of the object in Figure 1 and updates the clusters. The result is shown in Figure 3.
 
-  ![Figure 2](path/to/figure2.png) | ![Figure 3](path/to/figure3.png)
+ ![Figure 3]([path/to/figure3.png](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig2.jpg)) |  ![Figure 4]([path/to/figure4.png](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig3.jpg))
 
 - **operator+ (Point):** This operator adds the specified point to the points of the cluster and updates the clusters. For example, a point has been added at the position 10000-20000, and it is now in Figure 4.
+  ![Figure 5]([path/to/figure5.png](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig4.jpg))
 
-  ![Figure 4](path/to/figure4.png)
+
 
 - **operator- (int ID):** This operator removes the point with the specified ID from the points of the object and updates the clusters. For example, in the output of Figure 5, the point with ID:3 has been removed.
+  ![Figure 6]([path/to/figure5.png](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig4.jpg))
 
-  ![Figure 5](path/to/figure5.png)
 
 - **Additionally, it also has operator<< and operator>> friend functions:** With the >> operator, it adds the entered point to the object. With the << operator, it prints point and cluster information to the screen.
-
 ## Usage Example
 
 Below is an example code snippet demonstrating the usage of the KMeansCluster class:
-
+https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig5.jpg
 ```cpp
 KMeansCluster k_obj1(3, "data1.txt");
 KMeansCluster k_obj2(3, "data2.txt");

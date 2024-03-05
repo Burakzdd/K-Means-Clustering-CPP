@@ -14,26 +14,26 @@ This project is designed to cluster a specific dataset into a specified number o
 - matplotlibcpp.h: Library used for visualization.
 - main.cpp: Main program file. It interacts with the user and executes the K-Means algorithm.
 
-![Figure 1 ](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/UML_kmeans.jpg)
+![Figure 1 ](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/UML_kmeans.jpg){ width=50% }
 ## Functions and Operator
 
 - **visualizeClusters Function:** This function visualizes clusters and points using the matplotlib library. For example, the visualization output is shown in Figure 1 below.
-![Figure 2](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig1.jpg)
+![Figure 2](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig1.jpg){ width=50% }
 - **saveClusters Function:** This function saves the coordinates of clusters to a text file.
 
 - **savePoints Function:** This function saves the coordinates of points and the clusters they belong to a text file.
 
 - **operator+ (KMeansCluster):** This operator adds the points of the object at the end of the points of the passed object and updates the clusters. For instance, when there are 5 points as shown in Figure 2, this operator adds them to the points of the object in Figure 1 and updates the clusters. The result is shown in Figure 3.
 
- ![Figure 3]([path/to/figure3.png](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig2.jpg)) |  ![Figure 4]([path/to/figure4.png](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig3.jpg))
+ ![Figure 3]([path/to/figure3.png](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig2.jpg)){ width=50% } |  ![Figure 4]([path/to/figure4.png](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig3.jpg)){ width=50% }
 
 - **operator+ (Point):** This operator adds the specified point to the points of the cluster and updates the clusters. For example, a point has been added at the position 10000-20000, and it is now in Figure 4.
-  ![Figure 5]([path/to/figure5.png](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig4.jpg))
+  ![Figure 5](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig4.jpg){ width=50% }
 
 
 
 - **operator- (int ID):** This operator removes the point with the specified ID from the points of the object and updates the clusters. For example, in the output of Figure 5, the point with ID:3 has been removed.
-  ![Figure 6]([path/to/figure5.png](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig4.jpg))
+  ![Figure 6](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig4.jpg){ width=50% }
 
 
 - **Additionally, it also has operator<< and operator>> friend functions:** With the >> operator, it adds the entered point to the object. With the << operator, it prints point and cluster information to the screen.

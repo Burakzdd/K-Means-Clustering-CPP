@@ -14,8 +14,8 @@ This project is designed to cluster a specific dataset into a specified number o
 - matplotlibcpp.h: Library used for visualization.
 - main.cpp: Main program file. It interacts with the user and executes the K-Means algorithm.
 
-
-## Functions and Operators
+![Figure 1 ](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/UML_kmeans.jpg)
+## Functions and Operator
 
 - **visualizeClusters Function:** This function visualizes clusters and points using the matplotlib library. For example, the visualization output is shown in Figure 1 below.
 

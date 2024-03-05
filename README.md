@@ -83,7 +83,7 @@ k_obj3.visualizeClusters();
 
 // Clustering results and the status of points are printed
 cout << k_obj3;
-
+```
 ## Contact
 
 If you have any questions or feedback regarding the project, please contact us at burak67ozd@outlook.com.

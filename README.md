@@ -13,40 +13,57 @@ This project is designed to cluster a specific dataset into a specified number o
 - KMeansCluster.h, KMeansCluster.cpp: Contains the class and functions extending the KMeans class and performing visualization operations.
 - matplotlibcpp.h: Library used for visualization.
 - main.cpp: Main program file. It interacts with the user and executes the K-Means algorithm.
-<img src="https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/UML_kmeans.jpg" width="800" height="400">
-<p align="center"><em>Figure 1: Project UML</em></p>
+
+<p align="center">
+    <img src="https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/UML_kmeans.jpg" width="800" height="400">
+    <br>
+    <em>Figure 1: Project UML</em>
+</p>
 
 ## Functions and Operator
 
-- **visualizeClusters Function:** This function visualizes clusters and points using the matplotlib library. For example, the visualization output is shown in Figure 1 below.
-<img src="https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig1.jpg" width="600" height="400">
-<p align="center"><em>Figure2</em></p>
+- **visualizeClusters Function:** This function visualizes clusters and points using the matplotlib library. For example, the visualization output is shown in Figure 1 above.
+    <p align="center">
+        <img src="https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig1.jpg" width="600" height="400">
+        <br>
+        <em>Figure 2</em>
+    </p>
 - **saveClusters Function:** This function saves the coordinates of clusters to a text file.
 
 - **savePoints Function:** This function saves the coordinates of points and the clusters they belong to a text file.
 
 - **operator+ (KMeansCluster):** This operator adds the points of the object at the end of the points of the passed object and updates the clusters. For instance, when there are 5 points as shown in Figure 2, this operator adds them to the points of the object in Figure 1 and updates the clusters. The result is shown in Figure 3.
-
-<img src="https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig2.jpg" width="600" height="400">
-<p align="center"><em>Figure3</em></p> |  <img src="https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig3.jpg" width="600" height="400">
-<p align="center"><em>Figure4</em></p>
+    <p align="center">
+        <img src="https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig2.jpg" width="600" height="400">
+        <br>
+        <em>Figure 3</em>
+    </p>
+    <p align="center">
+        <img src="https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig3.jpg" width="600" height="400">
+        <br>
+        <em>Figure 4</em>
+    </p>
 
 - **operator+ (Point):** This operator adds the specified point to the points of the cluster and updates the clusters. For example, a point has been added at the position 10000-20000, and it is now in Figure 4.
-<img src="https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig4.jpg" width="600" height="400">
-<p align="center"><em>Figure4</em></p>
-
-
+    <p align="center">
+        <img src="https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig4.jpg" width="600" height="400">
+        <br>
+        <em>Figure 5</em>
+    </p>
 
 - **operator- (int ID):** This operator removes the point with the specified ID from the points of the object and updates the clusters. For example, in the output of Figure 5, the point with ID:3 has been removed.
-<img src="https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig5.jpg" width="600" height="400">
-<p align="center"><em>Figure5</em></p>
-
+    <p align="center">
+        <img src="https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig5.jpg" width="600" height="400">
+        <br>
+        <em>Figure 6</em>
+    </p>
 
 - **Additionally, it also has operator<< and operator>> friend functions:** With the >> operator, it adds the entered point to the object. With the << operator, it prints point and cluster information to the screen.
+
 ## Usage Example
 
 Below is an example code snippet demonstrating the usage of the KMeansCluster class:
-https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig5.jpg
+
 ```cpp
 KMeansCluster k_obj1(3, "data1.txt");
 KMeansCluster k_obj2(3, "data2.txt");

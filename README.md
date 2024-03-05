@@ -25,7 +25,7 @@ This project is designed to cluster a specific dataset into a specified number o
 
 - **operator+ (KMeansCluster):** This operator adds the points of the object at the end of the points of the passed object and updates the clusters. For instance, when there are 5 points as shown in Figure 2, this operator adds them to the points of the object in Figure 1 and updates the clusters. The result is shown in Figure 3.
 
- ![Figure 3]([path/to/figure3.png](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig2.jpg)){ width=50% } |  ![Figure 4]([path/to/figure4.png](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig3.jpg)){ width=50% }
+ ![Figure 3](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig2.jpg){ width=50% } |  ![Figure 4](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig3.jpg){ width=50% }
 
 - **operator+ (Point):** This operator adds the specified point to the points of the cluster and updates the clusters. For example, a point has been added at the position 10000-20000, and it is now in Figure 4.
   ![Figure 5](https://github.com/Burakzdd/K-Means-Clustering-CPP/blob/main/img/fig4.jpg){ width=50% }
